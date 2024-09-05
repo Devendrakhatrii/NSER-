@@ -1127,3 +1127,12 @@ div.gallery .item:hover img {
     margin: 4px 0px;
   }
 }
+
+/*** About Start ***/
+.about .tab-class .nav .nav-item a.active,
+.about .tab-class .nav .nav-item a.active span {
+    background: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+}
+
+/*** About End ***/
