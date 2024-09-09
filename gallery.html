@@ -1,132 +1,237 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!--  *****   Link To Custom CSS Style Sheet   *****  -->
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  <head>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-	<!--  *****   Link To Font Awsome Icons   *****  -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+	<link
+      rel="shortcut icon"
+      href="/img/favicon_io/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
-</head>
-<body>
-<section class="portfolio">
-	
-	<header class="section-head">
-		<h1>Some Of My Latest Works</h1>
-	</header>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-	<main class="mainContainer">
-		
-		<!--  *****  Buttons Section Starts  *****  -->
-		<div class="button-group">
-			<button class="button active" data-filter="*">All</button>
-			<button class="button" data-filter=".visa">Visa</button>
-		<button class="button" data-filter=".events">Events</button>
-			<button class="button" data-filter=".sem">Seminars</button>
-		</div>
-		<!--  *****  Buttons Section Ends  *****  -->
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-		<!--  *****  Gallery Section Starts  *****  -->
-		<div class="gallery">
-			
-			<!--  *****  Card 1 Starts  *****  -->
-			<div class="item events">
-				<img src="/img/Gallery/jei.jpg">
-			</div>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!--  *****   Link To Custom CSS Style Sheet   *****  -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-			<div class="item events">
-				<img src="/img/Gallery/Finland.jpg">
-			</div>
-			
-			<div class="item events">
-				<img src="/img/Gallery/Gai.jpg">
-			</div>
-			
-			<div class="item events">
-				<img src="/img/Gallery/krishna.jpg">
-			</div>
+    <!--  *****   Link To Font Awsome Icons   *****  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
-			<div class="item events">
-				<img src="/img/Gallery/rakshya.jpg">
-			</div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+      <div class="row gx-0 align-items-center">
+        <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+          <div class="d-flex">
+            <a href="#" class="text-muted me-4"
+              ><i class="fas fa-envelope text-secondary me-2"></i
+              >multiconsultnser@gmail.com</a
+            >
+            <a href="#" class="text-muted me-0"
+              ><i class="fas fa-phone-alt text-secondary me-2"></i>+015339253</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0 px-lg-5">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a
+              class="btn btn-sm btn-outline-light btn-square rounded-circle me-2"
+              href="https://www.facebook.com/nsereducation?mibextid=ZbWKwL"
+              ><i class="fab fa-facebook-f fw-normal text-secondary"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-square rounded-circle me-2"
+              href="https://www.instagram.com/nsermulti/"
+              ><i class="fab fa-instagram fw-normal text-secondary"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a href="#" class="text-muted me-2"> Help</a><small> / </small>
+            <a href="#" class="text-muted mx-2"> Support</a><small> / </small>
+            <a href="#" class="text-muted ms-2"> Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
 
-			<div class="item events">
-				<img src="/img/Gallery/korea.jpg">
-			</div>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar p-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand p-0">
+          <h1 class="display-5 text-secondary m-0">
+            <img src="img/logo.png" class="img-fluid" alt="" />
+          </h1>
+          <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="index.html#about" class="nav-item nav-link">About</a>
+            <a href="index.html#services" class="nav-item nav-link">Services</a>
+            <a href="index.html#country" class="nav-item nav-link">Countries</a>
+            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+    <section class="portfolio">
+      <header class="section-head">
+        <h1>Some Of My Latest Works</h1>
+      </header>
 
-			<div class="item events">
-				<img src="/img/Gallery/korea 2.jpg">
-			</div>
+      <main class="mainContainer">
+        <!--  *****  Buttons Section Starts  *****  -->
+        <div class="button-group">
+          <button class="button active" data-filter="*">All</button>
+          <button class="button" data-filter=".visa">Visa</button>
+          <button class="button" data-filter=".events">Events</button>
+          <button class="button" data-filter=".sem">Seminars</button>
+        </div>
+        <!--  *****  Buttons Section Ends  *****  -->
 
-			<div class="item events">
-				<img src="/img/Gallery/korea 3.jpg">
-			</div>
+        <!--  *****  Gallery Section Starts  *****  -->
+        <div class="gallery">
+          <!--  *****  Card 1 Starts  *****  -->
+          <div class="item events">
+            <img src="/img/Gallery/jei.jpg" />
+          </div>
 
-			<div class="item events">
-				<img src="/img/Gallery/korea 4.jpg">
-			</div>
+          <div class="item events">
+            <img src="/img/Gallery/Finland.jpg" />
+          </div>
 
-			<div class="item events">
-				<img src="/img/Gallery/korea 5.jpg">
-			</div>
+          <div class="item events">
+            <img src="/img/Gallery/Gai.jpg" />
+          </div>
 
-			<div class="item sem">
-				<img src="/img/Gallery/sem.jpg">
-			</div>
+          <div class="item events">
+            <img src="/img/Gallery/krishna.jpg" />
+          </div>
 
-			<div class="item sem">
-				<img src="/img/Gallery/sem 1.jpg">
-			</div>
+          <div class="item events">
+            <img src="/img/Gallery/rakshya.jpg" />
+          </div>
 
-			<div class="item sem">
-				<img src="/img/Gallery/sem 2.jpg">
-			</div>
+          <div class="item events">
+            <img src="/img/Gallery/korea.jpg" />
+          </div>
 
-			<div class="item sem">
-				<img src="/img/Gallery/sem 3.jpg">
-			</div>
+          <div class="item events">
+            <img src="/img/Gallery/korea 2.jpg" />
+          </div>
 
-			<div class="item sem">
-				<img src="/img/Gallery/sem 4.jpg">
-			</div>
+          <div class="item events">
+            <img src="/img/Gallery/korea 3.jpg" />
+          </div>
 
-			<div class="item sem">
-				<img src="/img/Gallery/sem 4.jpg">
-			</div>
-			<!--  *****  Card 1 Ends  *****  -->
+          <div class="item events">
+            <img src="/img/Gallery/korea 4.jpg" />
+          </div>
 
-		</div>
-		<!--  *****  Gallery Section Ends  *****  -->
+          <div class="item events">
+            <img src="/img/Gallery/korea 5.jpg" />
+          </div>
 
-	</main>
+          <div class="item sem">
+            <img src="/img/Gallery/sem.jpg" />
+          </div>
 
-</section>
+          <div class="item sem">
+            <img src="/img/Gallery/sem 1.jpg" />
+          </div>
 
+          <div class="item sem">
+            <img src="/img/Gallery/sem 2.jpg" />
+          </div>
 
-<!--   *****   JQuery Link   *****   -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+          <div class="item sem">
+            <img src="/img/Gallery/sem 3.jpg" />
+          </div>
 
-<!--   *****   Isotope Filter Link   *****  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+          <div class="item sem">
+            <img src="/img/Gallery/sem 4.jpg" />
+          </div>
 
-<script type="text/javascript">
-	var $galleryContainer = $('.gallery').isotope({
-		itemSelector: '.item',
-  		layoutMode: 'fitRows'
-	})
+          <div class="item sem">
+            <img src="/img/Gallery/sem 4.jpg" />
+          </div>
+          <!--  *****  Card 1 Ends  *****  -->
+        </div>
+        <!--  *****  Gallery Section Ends  *****  -->
+      </main>
+    </section>
 
-	$('.button-group .button').on('click', function(){
-		$('.button-group .button').removeClass('active');
-		$(this).addClass('active');
+    <!--   *****   JQuery Link   *****   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-		var value = $(this).attr('data-filter');
-		$galleryContainer.isotope({
-			filter: value 
-		})
-	})
-</script>
+    <!--   *****   Isotope Filter Link   *****  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+      var $galleryContainer = $(".gallery").isotope({
+        itemSelector: ".item",
+        layoutMode: "fitRows",
+      });
 
-</body>
+      $(".button-group .button").on("click", function () {
+        $(".button-group .button").removeClass("active");
+        $(this).addClass("active");
+
+        var value = $(this).attr("data-filter");
+        $galleryContainer.isotope({
+          filter: value,
+        });
+      });
+    </script>
+  </body>
 </html>
