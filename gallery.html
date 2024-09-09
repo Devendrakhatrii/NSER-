@@ -1,192 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>NSER Multi Consult</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+<html>
+<head>
+	<!--  *****   Link To Custom CSS Style Sheet   *****  -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+	<!--  *****   Link To Font Awsome Icons   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-secondary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
-    <!-- Spinner End -->
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
-      <div class="row gx-0 align-items-center">
-        <div class="col-lg-5 text-center text-lg-start mb-lg-0">
-          <div class="d-flex">
-            <a href="#" class="text-muted me-4"
-              ><i class="fas fa-envelope text-secondary me-2"></i
-              >multiconsultnser@gmail.com</a
-            >
-            <a href="#" class="text-muted me-0"
-              ><i class="fas fa-phone-alt text-secondary me-2"></i>+015339253</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0 px-lg-5">
-          <div class="d-inline-flex align-items-center" style="height: 45px">
-            <a
-              class="btn btn-sm btn-outline-light btn-square rounded-circle me-2"
-              href="https://www.facebook.com/nsereducation?mibextid=ZbWKwL"
-              ><i class="fab fa-facebook-f fw-normal text-secondary"></i
-            ></a>
-            <a
-              class="btn btn-sm btn-outline-light btn-square rounded-circle me-2"
-              href="https://www.instagram.com/nsermulti/"
-              ><i class="fab fa-instagram fw-normal text-secondary"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-4 text-center text-lg-end">
-          <div class="d-inline-flex align-items-center" style="height: 45px">
-            <a href="#" class="text-muted me-2"> Help</a><small> / </small>
-            <a href="#" class="text-muted mx-2"> Support</a><small> / </small>
-            <a href="#" class="text-muted ms-2"> Contact</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Topbar End -->
-
-    <!-- Navbar & Hero Start -->
-    <div class="container-fluid nav-bar p-0">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0"
-      >
-        <a href="" class="navbar-brand p-0">
-          <h1 class="display-5 text-secondary m-0">
-            <img src="img/logo.png" class="img-fluid" alt="" />
-          </h1>
-          <!-- <img src="img/logo.png" alt="Logo"> -->
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="#about" class="nav-item nav-link">About</a>
-            <a href="#services" class="nav-item nav-link">Services</a>
-            <a href="#country" class="nav-item nav-link">Countries</a>
-            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <!-- Navbar & Hero End -->
-
-
-
-
-
-
-
-
-        <section class="portfolio">
-  <div
-          class="section-title text-center mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-	<header class="sub-style ">
-        <h1 class="sub-title text-primary px-3" >Some Of our Latest Clips</h1>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+</head>
+<body>
+<section class="portfolio">
+	
+	<header class="section-head">
+		<h1>Some Of My Latest Works</h1>
 	</header>
- </div>
 
 	<main class="mainContainer">
-
+		
 		<!--  *****  Buttons Section Starts  *****  -->
 		<div class="button-group">
 			<button class="button active" data-filter="*">All</button>
-			<button class="button" data-filter=".design">Visa</button>
-		<button class="button" data-filter=".development">Events</button>
-			<button class="button" data-filter=".logo">Seminars</button>
+			<button class="button" data-filter=".visa">Visa</button>
+		<button class="button" data-filter=".events">Events</button>
+			<button class="button" data-filter=".sem">Seminars</button>
 		</div>
 		<!--  *****  Buttons Section Ends  *****  -->
 
 		<!--  *****  Gallery Section Starts  *****  -->
 		<div class="gallery">
-
+			
 			<!--  *****  Card 1 Starts  *****  -->
-			<div class="item design">
-				<img src="img/design1.jpg">
+			<div class="item events">
+				<img src="/img/Gallery/jei.jpg">
+			</div>
+
+			<div class="item events">
+				<img src="/img/Gallery/Finland.jpg">
+			</div>
+			
+			<div class="item events">
+				<img src="/img/Gallery/Gai.jpg">
+			</div>
+			
+			<div class="item events">
+				<img src="/img/Gallery/krishna.jpg">
+			</div>
+
+			<div class="item events">
+				<img src="/img/Gallery/rakshya.jpg">
+			</div>
+
+			<div class="item events">
+				<img src="/img/Gallery/korea.jpg">
+			</div>
+
+			<div class="item events">
+				<img src="/img/Gallery/korea 2.jpg">
+			</div>
+
+			<div class="item events">
+				<img src="/img/Gallery/korea 3.jpg">
+			</div>
+
+			<div class="item events">
+				<img src="/img/Gallery/korea 4.jpg">
+			</div>
+
+			<div class="item events">
+				<img src="/img/Gallery/korea 5.jpg">
+			</div>
+
+			<div class="item sem">
+				<img src="/img/Gallery/sem.jpg">
+			</div>
+
+			<div class="item sem">
+				<img src="/img/Gallery/sem 1.jpg">
+			</div>
+
+			<div class="item sem">
+				<img src="/img/Gallery/sem 2.jpg">
+			</div>
+
+			<div class="item sem">
+				<img src="/img/Gallery/sem 3.jpg">
+			</div>
+
+			<div class="item sem">
+				<img src="/img/Gallery/sem 4.jpg">
+			</div>
+
+			<div class="item sem">
+				<img src="/img/Gallery/sem 4.jpg">
 			</div>
 			<!--  *****  Card 1 Ends  *****  -->
-
-			<!--  *****  Card 2 Starts  *****  -->
-			<div class="item design">
-				<img src="img/design2.jpg">
-			</div>
-			<!--  *****  Card 2 Ends  *****  -->
-
-			<!--  *****  Card 3 Starts  *****  -->
-			<div class="item development">
-				<img src="img/website1.jpg">
-			</div>
-			<!--  *****  Card 3 Ends  *****  -->
-
-			<!--  *****  Card 4 Starts  *****  -->
-			<div class="item development">
-				<img src="img/website2.jpg">
-			</div>
-			<!--  *****  Card 4 Ends  *****  -->
-
-			<!--  *****  Card 5 Starts  *****  -->
-			<div class="item development">
-				<img src="img/website3.jpg">
-			</div>
-			<!--  *****  Card 5 Ends  *****  -->
-
-			<!--  *****  Card 6 Starts  *****  -->
-			<div class="item logo">
-			</div>
-			<!--  *****  Card 6 Ends  *****  -->
 
 		</div>
 		<!--  *****  Gallery Section Ends  *****  -->
@@ -194,7 +103,6 @@
 	</main>
 
 </section>
-</div>
 
 
 <!--   *****   JQuery Link   *****   -->
@@ -215,22 +123,10 @@
 
 		var value = $(this).attr('data-filter');
 		$galleryContainer.isotope({
-			filter: value
+			filter: value 
 		})
 	})
 </script>
 
-
-
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
