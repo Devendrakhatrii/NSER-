@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
-	<link
+    <link
       rel="shortcut icon"
       href="/img/favicon_io/android-chrome-512x512.png"
       type="image/x-icon"
@@ -128,108 +128,149 @@
         <div class="button-group">
           <button class="button active" data-filter="*">All</button>
           <button class="button" data-filter=".visa">Visa</button>
-          <button class="button" data-filter=".events">Events</button>
+          <button class="button" data-filter=".events">events</button>
           <button class="button" data-filter=".sem">Seminars</button>
         </div>
         <!--  *****  Buttons Section Ends  *****  -->
 
         <!--  *****  Gallery Section Starts  *****  -->
         <div class="gallery">
-          <!--  *****  Card 1 Starts  *****  -->
-          <div class="item events">
-            <img src="/img/Gallery/jei.jpg" />
-          </div>
-
-          <div class="item events">
-            <img src="/img/Gallery/Finland.jpg" />
-          </div>
-
-          <div class="item events">
-            <img src="/img/Gallery/Gai.jpg" />
-          </div>
-
-          <div class="item events">
-            <img src="/img/Gallery/krishna.jpg" />
-          </div>
-
-          <div class="item events">
-            <img src="/img/Gallery/rakshya.jpg" />
-          </div>
-
-          <div class="item events">
-            <img src="/img/Gallery/korea.jpg" />
-          </div>
-
-          <div class="item events">
-            <img src="/img/Gallery/korea 2.jpg" />
-          </div>
-
-          <div class="item events">
-            <img src="/img/Gallery/korea 3.jpg" />
-          </div>
-
-          <div class="item events">
-            <img src="/img/Gallery/korea 4.jpg" />
-          </div>
-
-          <div class="item events">
-            <img src="/img/Gallery/korea 5.jpg" />
-          </div>
-
-          <div class="item sem">
-            <img src="/img/Gallery/sem.jpg" />
-          </div>
-
-          <div class="item sem">
-            <img src="/img/Gallery/sem 1.jpg" />
-          </div>
-
-          <div class="item sem">
-            <img src="/img/Gallery/sem 2.jpg" />
-          </div>
-
-          <div class="item sem">
-            <img src="/img/Gallery/sem 3.jpg" />
-          </div>
-
-          <div class="item sem">
-            <img src="/img/Gallery/sem 4.jpg" />
-          </div>
-
-          <div class="item sem">
-            <img src="/img/Gallery/sem 4.jpg" />
-          </div>
-          <!--  *****  Card 1 Ends  *****  -->
+          <!-- Images will be appended dynamically here -->
         </div>
         <!--  *****  Gallery Section Ends  *****  -->
       </main>
     </section>
 
     <!--   *****   JQuery Link   *****   -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
 
     <!--   *****   Isotope Filter Link   *****  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
     <script type="text/javascript">
-      var $galleryContainer = $(".gallery").isotope({
-        itemSelector: ".item",
-        layoutMode: "fitRows",
-      });
+      $(document).ready(function () {
+        // Array of image data: { src: 'path-to-image', category: 'category-class' }
+        var images = [
+          //eventss picture here!
+          { src: "/img/Gallery/jei.jpg", category: "events" },
+          { src: "/img/Gallery/Finland.jpg", category: "events" },
+          { src: "/img/Gallery/Gai.jpg", category: "events" },
+          { src: "/img/Gallery/krishna.jpg", category: "events" },
+          { src: "/img/Gallery/rakshya.jpg", category: "events" },
+          { src: "/img/Gallery/korea.jpg", category: "events" },
+          { src: "/img/Gallery/korea 2.jpg", category: "events" },
+          { src: "/img/Gallery/korea 3.jpg", category: "events" },
+          { src: "/img/Gallery/korea 4.jpg", category: "events" },
+          { src: "/img/Gallery/korea 5.jpg", category: "events" },
 
-      $(".button-group .button").on("click", function () {
-        $(".button-group .button").removeClass("active");
-        $(this).addClass("active");
+          { src: "/img/Gallery/events/1.jpg", category: "events" },
+          { src: "/img/Gallery/events/2.jpg", category: "events" },
+          { src: "/img/Gallery/events/3.jpg", category: "events" },
+          { src: "/img/Gallery/events/4.jpg", category: "events" },
+          { src: "/img/Gallery/events/5.jpg", category: "events" },
+          { src: "/img/Gallery/events/6.jpg", category: "events" },
+          { src: "/img/Gallery/events/7.jpg", category: "events" },
+          { src: "/img/Gallery/events/8.jpg", category: "events" },
+          { src: "/img/Gallery/events/9.jpg", category: "events" },
+          { src: "/img/Gallery/events/10.jpg", category: "events" },
+          { src: "/img/Gallery/events/11.jpg", category: "events" },
+          { src: "/img/Gallery/events/12.jpg", category: "events" },
+          { src: "/img/Gallery/events/13.jpg", category: "events" },
+          { src: "/img/Gallery/events/14.jpg", category: "events" },
+          { src: "/img/Gallery/events/15.jpg", category: "events" },
+          { src: "/img/Gallery/events/16.jpg", category: "events" },
+          { src: "/img/Gallery/events/17.jpg", category: "events" },
+          { src: "/img/Gallery/events/18.jpg", category: "events" },
+          { src: "/img/Gallery/events/19.jpg", category: "events" },
+          { src: "/img/Gallery/events/20.jpg", category: "events" },
+          { src: "/img/Gallery/events/21.jpg", category: "events" },
+          { src: "/img/Gallery/events/22.jpg", category: "events" },
+          { src: "/img/Gallery/events/23.jpg", category: "events" },
+          { src: "/img/Gallery/events/24.jpg", category: "events" },
+          { src: "/img/Gallery/events/25.jpg", category: "events" },
 
-        var value = $(this).attr("data-filter");
-        $galleryContainer.isotope({
-          filter: value,
+          // visa pictures here
+          { src: "/img/Gallery/visa/1.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/2.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/3.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/4.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/5.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/6.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/7.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/8.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/9.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/10.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/11.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/12.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/13.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/14.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/15.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/16.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/17.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/18.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/19.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/20.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/21.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/22.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/23.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/24.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/25.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/26.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/27.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/28.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/29.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/30.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/31.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/32.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/33.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/34.jpg", category: "visa" },
+          { src: "/img/Gallery/visa/35.jpg", category: "visa" },
+
+          //seminar pictures here
+          { src: "/img/Gallery/sem.jpg", category: "sem" },
+          { src: "/img/Gallery/sem 1.jpg", category: "sem" },
+          { src: "/img/Gallery/sem 2.jpg", category: "sem" },
+          { src: "/img/Gallery/sem 3.jpg", category: "sem" },
+          { src: "/img/Gallery/sem 4.jpg", category: "sem" },
+          { src: "/img/Gallery/sem 4.jpg", category: "sem" },
+
+          { src: "/img/Gallery/seminar/1.jpg", category: "visa" },
+          { src: "/img/Gallery/seminar/2.jpg", category: "visa" },
+          { src: "/img/Gallery/seminar/3.jpg", category: "visa" },
+          { src: "/img/Gallery/seminar/4.jpg", category: "visa" },
+        ];
+
+        // Dynamically append images to the gallery
+        images.forEach(function (image) {
+          $(".gallery").append(
+            '<div class="item ' +
+              image.category +
+              '"><img src="' +
+              image.src +
+              '" alt="Gallery Image" /></div>'
+          );
+        });
+
+        // Initialize Isotope
+        var $galleryContainer = $(".gallery").isotope({
+          itemSelector: ".item",
+          layoutMode: "fitRows",
+        });
+
+        // Filter on button click
+        $(".button-group .button").on("click", function () {
+          $(".button-group .button").removeClass("active");
+          $(this).addClass("active");
+
+          var value = $(this).attr("data-filter");
+          $galleryContainer.isotope({ filter: value });
         });
       });
     </script>
